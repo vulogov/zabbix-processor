@@ -1,3 +1,8 @@
+use better_panic;
+
+pub mod cmd;
+
 fn main() {
-    println!("Hello, world!");
+    better_panic::install();
+    cmd::init();
 }
